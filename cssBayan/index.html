@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cssBayan</title>
+</head>
+<body>
+    <header>
+        <h1>CSS и HTML аккордион</h1>
+    </header>
+    <main>
+        
+        <div class="accordion-container"> <!-- 1 блок аккордиона. При наведении display: flex у иконки, изменение цвета у текста и выплывает изображение -->
+            <input id="accordion-heading-one" checked type="checkbox" name="accordion-heading"> <!-- название блока -->
+            <label for="accordion-heading-one">
+                <p class="accordion-title">Супер "программист"</p> <!-- имя -->
+                <span>+</span>
+            </label>
+            <label for="accordion-heading-one" class="accordion-content"> <!-- скрытое содержимое -->
+                <img src="./img/Mem1.jpg" alt="mem picture">
+            </label>
+        </div>
+
+        <div class="accordion-container">
+            <input id="accordion-heading-two" type="checkbox" name="accordion-heading">
+            <label for="accordion-heading-two">
+                <p class="accordion-title">Халявщик</p>
+                <span>+</span>
+            </label>
+            <label for="accordion-heading-two" class="accordion-content">
+                <img src="./img/Mem2.jpg" alt="mem picture">
+            </label>
+        </div>
+
+        <div class="accordion-container">
+            <input id="accordion-heading-three" type="checkbox" name="accordion-heading">
+            <label for="accordion-heading-three">
+                <p class="accordion-title">Сделай пж за бесплатно</p>
+                <span>+</span>
+            </label>
+            <label for="accordion-heading-three" class="accordion-content">
+                <img src="./img/Mem3.jpg" alt="mem picture">
+            </label>
+        </div>
+
+        <div class="accordion-container">
+            <input id="accordion-heading-four" type="checkbox" name="accordion-heading">
+            <label for="accordion-heading-four">
+                <p class="accordion-title">Все девушки прекрасны!</p>
+                <span>+</span>
+            </label>
+            <label for="accordion-heading-four" class="accordion-content">
+                <img src="./img/Mem4.jpg" alt="mem picture">
+            </label>
+        </div>
+
+        <div class="accordion-container">
+            <input id="accordion-heading-five" type="checkbox" name="accordion-heading">
+            <label for="accordion-heading-five">
+                <p class="accordion-five">Старт и конец проекта </p>
+                <span>+</span>
+            </label>
+            <label for="accordion-heading-five" class="accordion-content">
+                <img src="./img/Mem5.jpg" alt="mem picture">
+            </label>
+        </div>
+    </main>
+</body>
+</html>
