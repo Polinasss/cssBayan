@@ -105,6 +105,19 @@ input:checked ~ label p, input:checked ~ label span {
     body {
         background-color: rgb(229, 182, 182);
     }
+    .accordion-content {
+        max-height: 0rem;
+    }
+    .accordion-container:hover {
+        pointer-events: none;
+    }
+    input:checked ~ .accordion-content {
+        max-height: 20rem !important;
+    }
+    input:checked ~ label span {
+        transform: rotate(135deg);
+        display: block;
+    }
 }
 
 
